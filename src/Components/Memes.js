@@ -31,6 +31,7 @@ class Memes extends Component {
                         return <Meme 
                                     key={element.id}
                                     memeInfo={element}
+                                    reRender={this.reRender}
                                 />
                     })}
                 </div>

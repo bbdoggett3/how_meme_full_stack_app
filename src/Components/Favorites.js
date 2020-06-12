@@ -13,7 +13,8 @@ class Favorites extends Component {
 						return (
 							<Meme
 								key={element.id}
-                                memeInfo={element}
+								memeInfo={element}
+								//need to pass down the function reRender here
 							/>
 						);
 					})}

@@ -41,7 +41,7 @@ class Meme extends Component {
 
     toggleFav = (memeInfo) => {
         if(this.state.favorited){
-            this.props.unfavorite(memeInfo.id)
+            this.props.unfavorite(memeInfo)
         } else {
             this.props.favorited(memeInfo)
         }

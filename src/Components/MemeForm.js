@@ -51,7 +51,7 @@ class MemeForm extends Component {
         if(!title){
             title = 'Lame Caption'
         }
-        axios.put(`/api/memes/${id}`)
+        axios.put(`/api/memes/${id}`, {url, title})
         .then(()=> {
             this.props.history.push('/wall-of-memes')
         })
