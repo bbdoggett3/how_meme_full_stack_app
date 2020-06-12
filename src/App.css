@@ -40,7 +40,7 @@ a {
   align-items: center;  
 }
 
-mark {
+.mark {
   background-color: transparent;
   color: darkcyan;
   font-weight: bold;

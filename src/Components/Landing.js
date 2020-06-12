@@ -1,9 +1,9 @@
 import React from "react";
 
-class Landing(props) {
+function Landing(props) {
 	return (
 		<div className="landing-box">
-			<mark>Welcome to HowMeme!</mark>
+			<h1 className="mark">Welcome to HowMeme!</h1>
 			<br />
 			Follow the links above to find out why we are so great!
 		</div>

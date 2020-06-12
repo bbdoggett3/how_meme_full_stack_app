@@ -63,7 +63,7 @@ class MemeForm extends Component {
             <div className='form-container'>
                 <div className="form-box">
                     <input
-                        name='tile'
+                        name='title'
                         onChange={this.handleChange}
                         placeholder='Meme Title'
                         value={this.state.title}
@@ -78,15 +78,15 @@ class MemeForm extends Component {
                         name='url'
                         onChange={e => this.handleChange(e)}
                         placeholder='Meme URL'
-                        value={this.state.curl}
+                        value={this.state.url}
                         className='url-input'
                     />
-                    {editing ? (
+                    {this.state.editing ? (
                         <button onClick={() => this.updateMeme(id, url, title)} className='add-edit-button'>Update Meme!</button>
                     ) : (
                         <button onClick={() => this.addMeme(url, title)} className='add-edit-button'>Add Meme!</button>
                     )}
-                </div
+                </div>
             </div>
         );
     }

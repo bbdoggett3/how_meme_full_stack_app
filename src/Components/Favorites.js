@@ -3,7 +3,9 @@ import {connect} from 'react-redux'
 import Meme from "./Meme";
 
 class Favorites extends Component {
+	
 	render() {
+		console.log(this.props.favorites)
 		return (
 			<div className="meme-dashboard">
 				<div className="memes-container">
@@ -23,8 +25,8 @@ class Favorites extends Component {
 
 function mapStateToProps(state) {
 	return {
-		favorites: state.reducer.favrited
+		favorites: state.reducer.favorited
 	};
 }
 
-export default connect()(Favorites);
+export default connect(mapStateToProps)(Favorites);
